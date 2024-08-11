@@ -9,8 +9,6 @@ import productRoutes from './routes/productRoutes.js'
 import cors from 'cors';
 
 
-
-
 dotenv.config();
 
 connectDB();
@@ -26,7 +24,7 @@ app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 app.get('/',(req,res)=>{
-    res.send("<h1>Thsi is E-Commerce Site</h1>");
+    res.send("<h1>This is E-Commerce Site</h1>");
 });
 
 const PORT =  8080;
